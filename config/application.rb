@@ -9,12 +9,17 @@ Bundler.require(*Rails.groups)
 module TestApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 8.0
+    # REMOVE OR COMMENT THIS OUT (NOT SUPPORTED IN RAILS 4.2)
+    # config.load_defaults 8.0
 
-    # Please, add to the `ignore` list any other `lib` subdirectories that do
-    # not contain `.rb` files, or that should not be reloaded or eager loaded.
-    # Common ones are `templates`, `generators`, or `middleware`, for example.
-    config.autoload_lib(ignore: %w[assets tasks])
+    # Enable asset pipeline (required for Rails 4.2)
+    config.assets.enabled = true
+
+    require "sprockets/railtie"
+
+
+    # Serve static files in production (required for Rails 4.2)
+    config.serve_static_files = true
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -25,3 +30,4 @@ module TestApp
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
