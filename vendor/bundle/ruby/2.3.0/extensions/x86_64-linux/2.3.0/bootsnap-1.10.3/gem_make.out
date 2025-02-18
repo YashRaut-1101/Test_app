@@ -1,0 +1,23 @@
+current directory: /home/definenight/test_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.10.3/ext/bootsnap
+/usr/share/rvm/rubies/ruby-2.3.0/bin/ruby -I /usr/share/rvm/rubies/ruby-2.3.0/lib/ruby/site_ruby/2.3.0 -r ./siteconf20250213-127433-rfsvfb.rb extconf.rb
+creating Makefile
+
+current directory: /home/definenight/test_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/definenight/test_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+bootsnap.c: In function ‘bs_rb_fetch’:
+bootsnap.c:352:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  352 |   char * cachedir = RSTRING_PTR(cachedir_v);
+      |   ^~~~
+bootsnap.c: In function ‘bs_rb_precompile’:
+bootsnap.c:379:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  379 |   char * cachedir = RSTRING_PTR(cachedir_v);
+      |   ^~~~
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/definenight/test_app/vendor/bundle/ruby/2.3.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20250213-127433-9cmgy9/bootsnap

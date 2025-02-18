@@ -1,0 +1,44 @@
+
+.navbar {
+    background-color: black !important;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+}
+
+nav.link{
+    color:black !important;
+}
+h1 {
+    color: black;
+}
+
+#home-container {
+    margin-top:25px;
+}
+
+.jumbotron {
+    background-image: asset-url('writing.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 425px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background: #dcdee0;
+  background: linear-gradient(to right, #dbdee0, #d8e0e6);
+}
