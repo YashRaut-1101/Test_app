@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+<<<<<<< Updated upstream
+=======
+    before_save { self.email = email.downcase }
+>>>>>>> Stashed changes
     has_secure_password
     has_many :articles
     validates :username, presence: true, 
