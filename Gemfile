@@ -14,6 +14,8 @@ gem "sprockets-rails", "~> 3.2"
 
 # Use Active Model has_secure_password
 gem "bcrypt", "~> 3.1.7"
+gem 'will_paginate', '3.1.0'
+
 
 gem 'nokogiri', '1.10.10'
 gem 'loofah', '2.9.0'
