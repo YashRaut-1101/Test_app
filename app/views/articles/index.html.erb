@@ -1,8 +1,6 @@
 
 <h1 class="text-center mt-4">Articles listing page</h1>
 
-    
-<<<<<<< Updated upstream
 <div class="container">
   <% @articles.each do|article| %>
     <div clas="row justify-content-md-center">
@@ -26,10 +24,16 @@
         </div>
     </div>
   <% end %>
-</div>
-=======
-<%= render 'article' %>
->>>>>>> Stashed changes
 
+<div class="flickr_pagination">
+    <%= will_paginate @articles, :container => false %>
+</div>
+    
+<%= render 'article' %>
+
+<div class="flickr_pagination mb-4">
+    <%= will_paginate @articles, :container => false %>
+</div>
+    
 
 
