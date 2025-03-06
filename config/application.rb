@@ -15,6 +15,10 @@ module TestApp
     # Enable asset pipeline (required for Rails 4.2)
     config.assets.enabled = true
 
+    require 'will_paginate'
+    require 'will_paginate/active_record'
+
+
     require "sprockets/railtie"
 
 

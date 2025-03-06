@@ -1,38 +1,34 @@
 source "https://rubygems.org"
 
-# Use Rails 4.2.6 (compatible with Ruby 2.3.0)
-gem "rails", "~> 4.2.6"
+# Use Rails 5.2.8
+gem "rails", "~> 5.2.8"
 
 # Use sqlite3 for database
-gem "sqlite3", "~> 1.3.6"
+gem "sqlite3", "~> 1.4"
 
-# Use Puma web server (Rails 4 prefers WEBrick but we can use Puma)
-gem "puma", "~> 3.12"
+# Use Puma web server
+gem "puma", "~> 4.3"
 
-# Asset pipeline (Sprockets required for older Rails versions)
+# Asset pipeline
 gem "sprockets-rails", "~> 3.2"
 
 # Use Active Model has_secure_password
 gem "bcrypt", "~> 3.1.7"
-gem 'will_paginate', '3.1.0'
+gem 'will_paginate', '~> 3.1.7'
+gem 'turbolinks', '~> 5'
 
 
-gem 'nokogiri', '1.10.10'
-gem 'loofah', '2.9.0'
+# Security dependencies
+gem "nokogiri", "~> 1.11"
+gem "loofah", "~> 2.10"
 
-gem 'bootstrap-sass', '~> 3.4.1'
+# Frontend dependencies
+gem "bootstrap-sass", "~> 3.4.1"
+gem "sass-rails", "~> 6.0"
+gem "jquery-rails"
 
-
-gem 'sass-rails', '~> 5.0'
-
-
-gem 'jquery-rails'
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# Windows time zone fix
 gem "tzinfo-data", platforms: %i[mswin mingw x64_mingw jruby]
-
-# Improve boot speed
-gem "bootsnap", require: false
 
 # Debugging
 group :development, :test do
@@ -40,15 +36,15 @@ group :development, :test do
 end
 
 group :development do
-  gem "web-console", "~> 2.0"
+  gem "web-console", ">= 3.3.0"
 end
 
-
-
 group :test do
-  gem "capybara", "~> 2.15"
+  gem "capybara", ">= 3.26"
   gem "selenium-webdriver"
 end
 
 
-gem "nokogiri", "= 1.10.10"
+
+
+
