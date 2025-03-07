@@ -7,7 +7,7 @@ gem "rails", "~> 5.2.8"
 gem "sqlite3", "~> 1.4"
 
 # Use Puma web server
-gem "puma", "~> 4.3"
+gem "puma", "~> 6.6"
 
 # Asset pipeline
 gem "sprockets-rails", "~> 3.2"

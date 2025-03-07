@@ -106,7 +106,7 @@ GEM
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     public_suffix (5.1.1)
-    puma (4.3.12)
+    puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.11)
@@ -197,7 +197,7 @@ DEPENDENCIES
   jquery-rails
   loofah (~> 2.10)
   nokogiri (~> 1.11)
-  puma (~> 4.3)
+  puma (~> 6.6)
   rails (~> 5.2.8)
   sass-rails (~> 6.0)
   selenium-webdriver
