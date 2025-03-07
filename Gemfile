@@ -19,7 +19,7 @@ gem 'turbolinks', '~> 5'
 
 
 # Security dependencies
-gem "nokogiri", "~> 1.11"
+gem "nokogiri", "~> 1.18"
 gem "loofah", "~> 2.10"
 
 # Frontend dependencies

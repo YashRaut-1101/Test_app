@@ -103,7 +103,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.13.10-x86_64-linux)
+    nokogiri (1.18.3-x86_64-linux-gnu)
       racc (~> 1.4)
     public_suffix (5.1.1)
     puma (4.3.12)
@@ -196,7 +196,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   jquery-rails
   loofah (~> 2.10)
-  nokogiri (~> 1.11)
+  nokogiri (~> 1.18)
   puma (~> 4.3)
   rails (~> 5.2.8)
   sass-rails (~> 6.0)
