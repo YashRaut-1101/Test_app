@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "rails", "~> 5.2.8"
 
 # Use sqlite3 for database
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 2.6"
 
 # Use Puma web server
 gem "puma", "~> 4.3"
