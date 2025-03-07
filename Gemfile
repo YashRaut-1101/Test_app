@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Use Rails 5.2.8
-gem "rails", "~> 5.2.8"
+gem "rails", "~> 8.0.1"
 
 # Use sqlite3 for database
 gem "sqlite3", "~> 1.4"
