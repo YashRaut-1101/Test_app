@@ -20,7 +20,7 @@ gem 'turbolinks', '~> 5'
 
 # Security dependencies
 gem "nokogiri", "~> 1.11"
-gem "loofah", "~> 2.10"
+gem "loofah", "~> 2.24"
 
 # Frontend dependencies
 gem "bootstrap-sass", "~> 3.4.1"
